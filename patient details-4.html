@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patient Details Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"], input[type="date"] {
+        width: 100%;
+        padding: 8px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    .checkbox-group {
+        margin-top: 10px;
+    }
+    .checkbox-group label {
+        margin-right: 10px;
+    }
+    .submit-btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    .submit-btn:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Patient Details</h2>
+    <form id="patientForm">
+        <div class="form-group">
+            <label for="patientName">Name of Patient:</label>
+            <input type="text" id="patientName" name="patientName" required>
+        </div>
+        <div class="form-group">
+            <label for="prematurelyBorn">Prematurely Born:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" id="prematurelyBorn" name="prematurelyBorn"> Yes</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="patientAge">Age of Patient:</label>
+            <input type="date" id="patientAge" name="patientAge" required>
+        </div>
+        <div class="form-group">
+            <label for="patient gender">gender of Patient:</label>
+            <input type="text" id="patientgender" name="patientgender" required>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>

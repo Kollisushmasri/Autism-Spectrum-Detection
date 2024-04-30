@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Recording</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .video-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .upload-video {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .record-activation {
+    text-align: center;
+  }
+
+  .record-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="title">Video Recording</h1>
+
+  <div class="video-box">
+    <!-- Video upload area -->
+    <div class="upload-video">
+      <h2>Upload Video</h2>
+      <!-- You can place your upload video button or drag and drop area here -->
+      <input type="file" accept="video/*" />
+    </div>
+
+    <!-- Video recording activation area -->
+    <div class="record-activation">
+      <h2>Record Video</h2>
+      <!-- You can place your record activation button here -->
+      <button class="record-button">Record</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
